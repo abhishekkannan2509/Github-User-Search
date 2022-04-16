@@ -138,8 +138,25 @@ This project was built with the following technologies.
     - api connection using axios.
     - adding debounce to the input.
 
+
 ## Edge Cases:
 - Github API restriction:
     - Github api allows only 10 requests per minute. So when the user the user hits more than 10 calls per minute, we send an alert to the user.
 - If user not found:
     - We do conditional redering for the frontend.
+ 
+- If user not found:
+    - We do conditional redering for the frontend.
+    - 
+## useful endpoints:
+- frontend:
+    - http://localhost:3001/ - search page
+    - http://localhost:3001/:login - user page
+- backend:
+    - http://localhost:3000/search - with post method - q, page, per_page in params.
+    - http://localhost:3000/user - with post method - user in params.
+    - http://localhost:3000/clear-cache - get method to clear cache.
+    - http://localhost:3000/api-docs - swagger documentation.
+
+## Future scope:
+- add pagination. in the current project we display only top 10 users per search. in the future it can be modified in such a way that thhe user can input the no. of items per page and the page number. Due to the current github api limitions, it could not be implemented.
