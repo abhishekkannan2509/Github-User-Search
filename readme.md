@@ -144,10 +144,7 @@ This project was built with the following technologies.
     - Github api allows only 10 requests per minute. So when the user the user hits more than 10 calls per minute, we send an alert to the user.
 - If user not found:
     - We do conditional redering for the frontend.
- 
-- If user not found:
-    - We do conditional redering for the frontend.
-    - 
+
 ## useful endpoints:
 - frontend:
     - http://localhost:3001/ - search page
